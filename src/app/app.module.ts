@@ -46,7 +46,7 @@ import { HomecoursesComponent } from './homecourses/homecourses.component';
     AllcoursesComponent,
     LoginComponent,
     SignupComponent,
-    HomecoursesComponent
+    HomecoursesComponent,
   ],
   imports: [
     BrowserModule,

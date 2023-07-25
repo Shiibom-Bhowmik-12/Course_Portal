@@ -1,0 +1,9 @@
+#chead{
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-size: 30px;
+  /* margin-left:20px; */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+  text-align: center;
+}
