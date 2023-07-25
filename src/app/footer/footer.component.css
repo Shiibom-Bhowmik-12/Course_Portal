@@ -1,0 +1,54 @@
+#comtitle{
+  font-family:pottaone,cursive;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#logoimg{
+  width: 210px;
+  height: 50px;
+}
+
+#compara{
+  font-family: electrolize,sans-serif;
+  font-size: 23px;
+  font-weight: bold;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+#lnkdpng{
+  width:46px;
+  height:34px;
+  padding-right: 10px;
+}
+
+#lnkdpng:hover{
+  cursor: pointer;
+}
+
+#fbpng{
+  width:40px;
+  height:38px;
+}
+
+#fbpng:hover{
+  cursor: pointer;
+}
+
+#instapng{
+  width:46px;
+  height:34px;
+  padding-left:10px;
+}
+
+#instapng:hover{
+  cursor: pointer;
+}
+
+li{
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+.text-uppercase{
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}

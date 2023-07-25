@@ -1,0 +1,64 @@
+<nav class="d-flex navbar navbar-expand-lg navbar-light bg-warning sticky-top" id="navheight">
+  <a routerLink="/dashboard" routerLinkActive="active">
+    <i id="mainpagelogo" class="fa-solid fa-right-to-bracket fa-2x"></i>
+  </a>
+  <div class="dropdown">
+    <img class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" src="assets/login.png" alt="login"/>
+     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li id="logli"><a class="dropdown-item" routerLink="/home" routerLinkActive="active">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<div id="yp">
+  <h2><u>Your Profile</u></h2>
+</div>
+
+<div class="bordprofile">
+      <div class="container mt-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-7">
+                <div class="card p-3 py-1">
+                    <div class="text-center">
+                        <img src="assets/pp.jpg" width="120" height="135" class="rounded-circle" alt="profilepic">
+                    </div>
+                    <div class="text-center mt-3">
+                        <span class="bg-secondary p-1 px-4 rounded text-white">Newbie</span>
+                        <h5 class="mt-2 mb-0">Shibom Kumar Bhowmik</h5>
+                        <span>KIIT University</span>
+                        <div class="px-4 mt-1">
+                            <p class="fonts">
+                                <i class="fa fa-map-marker me-2"></i>India
+                                <br/>
+                                <br/>
+                                <!-- add text realted to achievent or yourself -->
+                                <span class="bg-primary p-1 px-2 rounded text-white">C++</span>
+                                <span class="bg-primary p-1 px-2 ms-1 rounded text-white">DSA</span>
+                                <span class="bg-primary p-1 px-2 ms-1 rounded text-white">C#</span>
+                                <span class="bg-primary p-1 px-2 ms-1 rounded text-white">Angular</span>
+                            </p>
+                        </div>
+                        <ul class="social-list">
+                            <li><a aria-label="facebook" rel="noopener" href="https://www.facebook.com/profile.php?id=100009065341058&mibextid=ZbWKwL" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a aria-label="dribble" rel="noopener" href="https://www.facebook.com/profile.php?id=100009065341058&mibextid=ZbWKwL" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a aria-label="instagram" rel="noopener" href="https://www.facebook.com/profile.php?id=100009065341058&mibextid=ZbWKwL" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a aria-label="linkedin" rel="noopener" href="https://www.linkedin.com/in/shibom-bhowmik-9709081b8" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a aria-label="google" rel="noopener" href="https://www.linkedin.com/in/shibom-bhowmik-9709081b8" target="_blank"><i class="fa fa-google"></i></a></li>
+                        </ul>
+                        
+                        <div class="buttons">
+                          <a routerLink="/dashboard" routerLinkActive="active">
+                            <input type="button" class="btn btn-primary px-4" value="Back">
+                          </a>
+                            <a id="updpro" routerLink="/updateprofile" routerLinkActive="active">
+                              <!-- <button class="btn btn-primary px-4 ms-3">Update Details</button> -->
+                              <input type="button" class="btn btn-primary px-4 ms-3" value="Update Details">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+</div>

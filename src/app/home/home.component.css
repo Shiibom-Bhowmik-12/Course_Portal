@@ -1,0 +1,16 @@
+#carousalh5{
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-size: 25px;
+}
+
+.carousalp{
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-size: 20px;
+}
+
+::ng-deep app-header{
+  position: fixed;
+  width:100%;
+  z-index:100;
+}
+

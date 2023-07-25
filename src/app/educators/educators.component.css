@@ -1,0 +1,53 @@
+#chead{
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-size: 30px;
+  /* margin-left:20px; */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+  text-align: center;
+}
+
+.body {
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: 300px 2fr;
+  gap: 1rem;
+  align-items: center;
+  max-width: 1270px;
+  margin: 0 auto;
+  font: 500 100%/1.5 system-ui;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 13px;
+  border: 2px solid #3a3e39;
+}
+
+p{
+  text-align: justify;
+  word-wrap:break-word;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+#striverimg{
+  margin-left: 517px;
+}
+
+#widestriver{
+  width:800px;
+}
+
+#striverh2{
+  margin-top: 30px;
+}
+
+#striverp{
+  margin-bottom: 70px;
+}
+
+h2{
+  margin-bottom: 30px;
+}

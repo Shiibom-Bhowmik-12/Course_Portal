@@ -1,0 +1,61 @@
+#chead{
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-size: 30px;
+  /* margin-left:20px; */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+  text-align: center;
+}
+
+.carousel-control-prev-icon{
+  background-color: #3a3e39;
+  height: 40px;
+  width: 40px;
+  border-radius: 40%;
+  margin-top: 100px;
+}
+
+.carousel-control-next-icon{
+  background-color: #3a3e39;
+  height: 40px;
+  width: 40px;
+  border-radius: 40%;
+  margin-top: 100px;
+}
+
+#sidebtn{
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-size: 19px;
+  /* margin-left: 85%; */
+  float: right;
+  margin-right:60px;
+}
+
+.card{
+  width: 340px;
+  margin: auto;
+  border:1px solid #3a3e39;
+  box-shadow: 5px 10px 8px 10px #888888;
+}
+
+#sidebtnanchor{
+  text-decoration: none;
+  color: black;
+}
+
+p{
+  text-align: justify;
+  word-wrap:break-word;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+ngb-rating {
+  color: rgb(228, 191, 28);
+  font-size: 25px;
+}
+
+.btn{
+  float:right;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}

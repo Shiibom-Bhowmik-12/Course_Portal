@@ -1,0 +1,17 @@
+<nav class="d-flex navbar navbar-expand-lg navbar-light bg-warning sticky-top" id="navheight">
+  <div class="side-nav-button p-2 me-3 text-dark" (click)="SideNavToggle()">
+    <i class="fas fa-bars"></i>
+  </div>
+
+    <a routerLink="/home" routerLinkActive="active">
+      <img src="assets/complogo.png" alt="logo" id="logo" />
+    </a>
+
+  <div class="dropdown">
+    <img class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" src="assets/login.png" alt="login"/>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li id="proli"><a class="dropdown-item" routerLink="/viewprofile" routerLinkActive="active">Profile</a></li>
+      <li id="logli"><a class="dropdown-item" routerLink="/home" routerLinkActive="active">Logout</a></li>
+    </ul>
+  </div>
+</nav>
