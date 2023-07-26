@@ -100,7 +100,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/404error',
+    redirectTo: '/home',
     pathMatch: 'full',
   },
   {
