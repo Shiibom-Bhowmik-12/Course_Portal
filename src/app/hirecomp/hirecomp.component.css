@@ -71,10 +71,35 @@ body {
 
 .logos-slide {
   display: inline-block;
-  animation: 36s slide infinite linear;
+  animation: 45s slide infinite linear;
 }
 
 .logos-slide img {
   height: 50px;
   margin: 0 40px;
+}
+
+#stats{
+  display: flex;
+  flex-direction: row;
+}
+
+p{
+  text-align: justify;
+  word-wrap:break-word;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-size: 35px;
+  color: grey;
+}
+
+#p1{
+  margin-left:350px;
+}
+
+#p2{
+  margin-left: 120px;
+}
+
+hr{
+  margin-left:380px;
 }

@@ -1,0 +1,35 @@
+#chead{
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-size: 30px;
+  /* margin-left:20px; */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+  text-align: center;
+}
+
+#aboutusbox{
+  border: 2px solid #60584c;
+  border-radius: 10px;
+  width: 1400px;
+  margin-left:60px;
+}
+
+#intro{
+  text-align: justify;
+  word-wrap:break-word;
+  margin-left: 25px;
+  margin-right:25px;
+  margin-top: 20px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+#content{
+  text-align: justify;
+  word-wrap:break-word;
+  margin-left: 25px;
+  margin-right:25px;
+  margin-top:15px;
+  margin-bottom: 20px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}

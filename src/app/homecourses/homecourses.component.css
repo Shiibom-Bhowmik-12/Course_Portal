@@ -32,16 +32,16 @@
   margin-right:60px;
 }
 
+#sidebtnanchor{
+  text-decoration: none;
+  color: black;
+}
+
 .card{
   width: 340px;
   margin: auto;
   border:1px solid #3a3e39;
   box-shadow: 5px 10px 8px 10px #888888;
-}
-
-#sidebtnanchor{
-  text-decoration: none;
-  color: black;
 }
 
 p{

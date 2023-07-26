@@ -9,6 +9,17 @@ import { ErrorComponent } from './error/error.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { CoursesComponent } from './courses/courses.component';
+import { StoriesComponent } from './stories/stories.component';
+import { MailboxComponent } from './mailbox/mailbox.component';
+import { AnalyticsComponent } from './analytics/analytics.component';
+import { ChatComponent } from './chat/chat.component';
+import { CartComponent } from './cart/cart.component';
+import { TasksComponent } from './tasks/tasks.component';
+import { AssignmentsComponent } from './assignments/assignments.component';
+import { MycoursesComponent } from './mycourses/mycourses.component';
+import { OrdersComponent } from './orders/orders.component';
+import { LiveclassesComponent } from './liveclasses/liveclasses.component';
+
 
 const routes: Routes = [
   {
@@ -46,6 +57,46 @@ const routes: Routes = [
   {
     path:'courses',
     component:CoursesComponent
+  },
+  {
+    path:'successstories',
+    component:StoriesComponent
+  },
+  {
+    path:'mailbox',
+    component:MailboxComponent
+  },
+  {
+    path:'analytics',
+    component:AnalyticsComponent
+  },
+  {
+    path:'chat',
+    component:ChatComponent
+  },
+  {
+    path:'cart',
+    component:CartComponent
+  },
+  {
+    path:'tasks',
+    component:TasksComponent
+  },
+  {
+    path:'assignments',
+    component:AssignmentsComponent
+  },
+  {
+    path:'mycourses',
+    component:MycoursesComponent
+  },
+  {
+    path:'orders',
+    component:OrdersComponent
+  },
+  {
+    path:'liveclasses',
+    component:LiveclassesComponent
   },
   {
     path: '',

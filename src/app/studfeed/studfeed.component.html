@@ -1,5 +1,29 @@
 <br/>
-
 <div id="chead">
   <u><b>Student Reviews</b></u>
 </div>
+
+<div id="comphead">
+  <h4>What our Students say about us</h4>
+</div>
+
+<div class="cardscollection">
+  <div class="card" *ngFor="let feed of feedbacks">
+    <img [src]="feed.logo" class="card-img-top" alt="facepic">
+    <div class="card-body">
+      <h5 class="card-title">{{feed.name}}</h5>
+      <p><u><b>Placed in {{feed.company}}</b></u></p>
+      <p id="coursename"><b>Course :</b> {{feed.course}}</p>
+      <p class="card-text">{{feed.feedback}}</p>
+      <a [href]="feed.linkedin" target="_blank" class="btn"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </div>
+</div>
+
+<br/>
+<a id="sidebtnanchor" routerLink="/successstories" routerLinkActive="active">
+  <div id="sidebtn">
+    <b><u>See More Success Stories</u></b>
+  </div>
+</a>
+<br/>

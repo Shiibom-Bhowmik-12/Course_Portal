@@ -7,9 +7,9 @@
   height: 50px;
 }
 
-/* .border-white{
-  border:1px solid white; 
-} */
+::ng-deep .side-nav-content {
+  position:sticky;
+}
 
 .nav-list{
   height: 100%;

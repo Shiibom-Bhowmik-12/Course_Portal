@@ -7,5 +7,5 @@ import { Component,Input } from '@angular/core';
   styleUrls: ['./homecourses.component.css']
 })
 export class HomecoursesComponent {
-
+  @Input() name:string="";
 }

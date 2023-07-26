@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ExtraOptions } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,7 +25,20 @@ import { AllcoursesComponent } from './allcourses/allcourses.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { HomecoursesComponent } from './homecourses/homecourses.component';
+import { StoriesComponent } from './stories/stories.component';
+import { CartComponent } from './cart/cart.component';
+import { ChatComponent } from './chat/chat.component';
+import { AnalyticsComponent } from './analytics/analytics.component';
+import { MailboxComponent } from './mailbox/mailbox.component';
+import { TasksComponent } from './tasks/tasks.component';
+import { AssignmentsComponent } from './assignments/assignments.component';
+import { MycoursesComponent } from './mycourses/mycourses.component';
+import { OrdersComponent } from './orders/orders.component';
+import { LiveclassesComponent } from './liveclasses/liveclasses.component';
 
+const routerOptions: ExtraOptions = {
+  anchorScrolling: 'enabled',
+};
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,6 +61,16 @@ import { HomecoursesComponent } from './homecourses/homecourses.component';
     LoginComponent,
     SignupComponent,
     HomecoursesComponent,
+    StoriesComponent,
+    CartComponent,
+    ChatComponent,
+    AnalyticsComponent,
+    MailboxComponent,
+    TasksComponent,
+    AssignmentsComponent,
+    MycoursesComponent,
+    OrdersComponent,
+    LiveclassesComponent,
   ],
   imports: [
     BrowserModule,
