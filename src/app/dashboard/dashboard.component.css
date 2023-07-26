@@ -17,7 +17,7 @@ app-sidenav{
   box-shadow:0px 0px 10px rgba(0,0,0,0.5);
   overflow-x :hidden;
   white-space: nowrap;
-  transition:width 250ms ease-in;
+  transition:width 260ms ease-in;
 }
 
 .app-side-nav-open{
@@ -58,4 +58,8 @@ app-headermain{
   margin-top: 50px;
   border-radius: 20px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+}
+
+p{
+  font-family: Comic Sans MS, Comic Sans, cursive;
 }

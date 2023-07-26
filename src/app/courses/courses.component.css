@@ -30,3 +30,66 @@
   margin-left:50px;
 }
 
+#cart{
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+  margin-left: 1020px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+#orders{
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+  margin-left: 29px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+#cart:hover{
+  color: #3a3e39;
+  cursor: pointer;
+}
+
+#orders:hover{
+  color: #3a3e39;
+  cursor: pointer;
+}
+
+.card{
+  width: 340px;
+  margin: auto;
+  border:1px solid #3a3e39;
+}
+
+p{
+  text-align: justify;
+  word-wrap:break-word;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+ngb-rating {
+  color: rgb(228, 191, 28);
+  font-size: 25px;
+}
+
+.btn{
+  float:right;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+.course-container{
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+::ng-deep #nav{
+  position: fixed;
+  width:100%;
+  z-index:100;
+}

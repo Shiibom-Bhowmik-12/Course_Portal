@@ -1,10 +1,10 @@
-<nav class="d-flex navbar navbar-expand-lg navbar-light bg-warning sticky-top">
+ <nav id="nav" class="d-flex navbar navbar-expand-lg navbar-light bg-warning sticky-top">
   <a routerLink="/home" routerLinkActive="active">
     <img src="assets/complogo.png" alt="logo" id="logo" />
   </a>
 
-  <a href="#" id="courses"><b>Courses</b></a>
-  <a href="#" id="faculty"><b>Faculty</b></a>
+  <a href="#" id="cart"><b>Cart</b></a>
+  <a href="#" id="orders"><b>Orders</b></a>
 
   <div class="dropdown">
     <img class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" src="assets/login.png" alt="login"/>
@@ -14,13 +14,39 @@
       </ul>
    </div>
 </nav>
+<br/>
+<br/>
+<br/>
+<div>
+  <input type="text" [(ngModel)]="searchTxt" placeholder="Search" id="search"/>
+</div>
+<br/>
 
+<!-- <div class="course-container">
+  <div class="course-card" *ngFor="let course of courses">
+    <h2>{{ course.title }}</h2>
+    <p>{{ course.description }}</p>
+    <p>Instructor: {{ course.instructor }}</p>
+    <p>Duration: {{ course.duration }} hours</p>
+  </div>
+</div> -->
 
-
-
-
-
-
+  <div class="course-container col-sm-12 col-lg-3">
+    <div class="card" *ngFor="let course of filteredCourses">
+      <img src="{{course.imageUrl}}" class="card-img-top" alt="courseimg">
+      <div class="card-body">
+        <h4 class="card-title">{{course.name}}</h4>
+        <p class="card-text">{{course.description}}</p>
+        <p>
+        <u>Educator</u> : {{course.educator}}
+      </p>
+      <p>
+        Rating : <ngb-rating [max]="5" [rate]="course.rating" [readonly]="true"></ngb-rating>({{course.rating}}k ratings)
+      </p>
+      <a  (click)="handleCourse(course.id)" ><button type="button" class="btn btn-primary">View Course</button></a>
+      </div>
+    </div> 			
+  </div>
 
 <br/>
 <app-footer></app-footer>

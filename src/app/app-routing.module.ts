@@ -19,7 +19,7 @@ import { AssignmentsComponent } from './assignments/assignments.component';
 import { MycoursesComponent } from './mycourses/mycourses.component';
 import { OrdersComponent } from './orders/orders.component';
 import { LiveclassesComponent } from './liveclasses/liveclasses.component';
-
+import { CoursesdetailsComponent } from './coursesdetails/coursesdetails.component';
 
 const routes: Routes = [
   {
@@ -43,64 +43,68 @@ const routes: Routes = [
     component: UpdateProfileComponent,
   },
   {
-    path:'404error',
-    component:ErrorComponent
+    path: '404error',
+    component: ErrorComponent,
   },
   {
-    path:'login',
-    component:LoginComponent
+    path: 'login',
+    component: LoginComponent,
   },
   {
-    path:'signup',
-    component:SignupComponent
+    path: 'signup',
+    component: SignupComponent,
   },
   {
-    path:'courses',
-    component:CoursesComponent
+    path: 'courses',
+    component: CoursesComponent,
   },
   {
-    path:'successstories',
-    component:StoriesComponent
+    path: 'successstories',
+    component: StoriesComponent,
   },
   {
-    path:'mailbox',
-    component:MailboxComponent
+    path: 'mailbox',
+    component: MailboxComponent,
   },
   {
-    path:'analytics',
-    component:AnalyticsComponent
+    path: 'analytics',
+    component: AnalyticsComponent,
   },
   {
-    path:'chat',
-    component:ChatComponent
+    path: 'chat',
+    component: ChatComponent,
   },
   {
-    path:'cart',
-    component:CartComponent
+    path: 'cart',
+    component: CartComponent,
   },
   {
-    path:'tasks',
-    component:TasksComponent
+    path: 'tasks',
+    component: TasksComponent,
   },
   {
-    path:'assignments',
-    component:AssignmentsComponent
+    path: 'assignments',
+    component: AssignmentsComponent,
   },
   {
-    path:'mycourses',
-    component:MycoursesComponent
+    path: 'mycourses',
+    component: MycoursesComponent,
   },
   {
-    path:'orders',
-    component:OrdersComponent
+    path: 'orders',
+    component: OrdersComponent,
   },
   {
-    path:'liveclasses',
-    component:LiveclassesComponent
+    path: 'liveclasses',
+    component: LiveclassesComponent,
+  },
+  {
+    path: 'coursedetails/:id',
+    component: CoursesdetailsComponent,
   },
   {
     path: '',
-    redirectTo: '/home',
+    redirectTo: 'home',
     pathMatch: 'full',
   },
   {

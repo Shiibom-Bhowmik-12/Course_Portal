@@ -1,5 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 import { ViewportScroller } from '@angular/common';
+import { Router,NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,9 +9,17 @@ import { ViewportScroller } from '@angular/common';
 })
 export class HomeComponent implements OnInit {
 
-  ngOnInit(): void {}
+  constructor(private router:Router,private scroller: ViewportScroller){
+  }
 
-  constructor(private scroller: ViewportScroller) { }
+  ngOnInit(): void {
+    this.router.events.subscribe((evt) => {
+      if(!(evt instanceof NavigationEnd)){
+        return;
+      }
+      window.scrollTo(0,0);
+    });  
+  }
 
   goToCourses(){
     this.scroller.scrollToAnchor('courses');
