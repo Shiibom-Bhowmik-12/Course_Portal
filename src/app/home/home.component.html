@@ -1,4 +1,22 @@
-<app-header></app-header>
+<nav id="nav" class="d-flex navbar navbar-expand-lg navbar-light bg-warning sticky-top">
+  <a routerLink="/home" routerLinkActive="active">
+    <img src="assets/complogo.png" alt="logo" id="logo" />
+  </a>
+
+  <a rel="" id="courses1" (click)="goToCourses()"><b>Courses</b></a>
+  <a rel="" id="faculty1" (click)="goToFaculty()"><b>Faculty</b></a>
+  <a id="placement1" (click)="goToPlacement()"><b>Placements</b></a>
+  <a id="review1" (click)="goToReviews()"><b>Reviews</b></a>
+  <a id="aboutus1" (click)="goToAboutUs()"><b>About Us</b></a>
+  
+  <div class="dropdown">
+      <img class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" src="assets/login.png" alt="login"/>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li id="proli"><a class="dropdown-item" routerLink="/login" routerLinkActive="active">Login</a></li>
+          <li id="proli"><a class="dropdown-item" routerLink="/signup" routerLinkActive="active">Sign Up</a></li>
+        </ul>
+  </div>
+</nav>
 
 <!-- marketing section with carousal -->
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -45,7 +63,7 @@
 
 <app-homecourses id="courses"></app-homecourses>
 <app-educators id="faculty"></app-educators>
-<app-hirecomp id="Placement"></app-hirecomp>
+<app-hirecomp id="placement"></app-hirecomp>
 <app-studfeed id="reviews"></app-studfeed>
 <app-aboutus id="aboutUs"></app-aboutus>
 

@@ -8,9 +8,120 @@
   font-size: 20px;
 }
 
-::ng-deep app-header{
+
+/* --------------- */
+
+::ng-deep #nav{
   position: fixed;
   width:100%;
   z-index:100;
 }
 
+.dropdown-toggle{
+  width: 33px;
+  height: 32px;
+}
+
+.loginpng:hover{
+  cursor: pointer;
+}
+
+.dropdown{
+  margin-left:50px;
+}
+
+nav img{
+  display: inline-block;
+  flex-wrap: wrap;
+}
+
+#lgside{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-menu{
+  margin-left: -75px;
+  width:50px;
+  text-align: center;
+  font-size: 20px;
+  justify-content: center;
+}
+
+.dropdown-item:hover{
+  background-color: #ddd8d8;
+}
+
+#logo{
+  margin-left:40px;
+  margin-top: 1px;
+  width: 200px;
+  height: 45px;
+}
+
+#courses1{
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+  margin-left: 650px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+#courses1:hover{
+  color: #3a3e39;
+  cursor: pointer;
+}
+
+#faculty1{
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+  margin-left: 25px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+#faculty1:hover{
+  color: #3a3e39;
+  cursor: pointer;
+}
+
+#placement1{
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+  margin-left: 25px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+#placement1:hover{
+  color: #3a3e39;
+  cursor: pointer;
+}
+
+#review1{
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+  margin-left: 25px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+#review1:hover{
+  color: #3a3e39;
+  cursor: pointer;
+}
+
+#aboutus1{
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+  margin-left: 25px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+#aboutus1:hover{
+  color: #3a3e39;
+  cursor: pointer;
+}
