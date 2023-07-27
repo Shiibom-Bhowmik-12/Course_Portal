@@ -17,10 +17,47 @@
 <br/>
 <br/>
 <br/>
-<div>
-  <input type="text" [(ngModel)]="searchTxt" placeholder="Search" id="search"/>
-</div>
 <br/>
+
+<div id="btncollection">
+    <input type="text" [(ngModel)]="searchTxt" placeholder="Search" id="search"/>
+    <i id="magicon" class="fa-solid fa-magnifying-glass fs-4 p-2"></i>
+
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+        Sort By Rating<span class="caret"></span></button>
+      <ul id="dropdownagain"  class="dropdown-menu">
+        <li><a rel="noopener" (click)="sortByRatingIncreaseToDecrease()">High to low</a></li>
+        <li><a rel="noopener" (click)="sortByRatingDecreaseToIncrease()">Low to High</a></li>
+      </ul>
+    </div>
+
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+        Sort By Category<span class="caret"></span></button>
+      <ul id="dropdownagain" class="dropdown-menu">
+        <li><a rel="noopener" (click)="sortByCategory('Programming Language')">Language</a></li>
+        <li><a rel="noopener" (click)="sortByCategory('Web Development')">Web dev</a></li>
+        <li><a rel="noopener" (click)="sortByCategory('Data Science')">AI/ML</a></li>
+        <li><a rel="noopener" (click)="sortByCategory('DSA')">DSA</a></li>
+      </ul>
+    </div>
+
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+        Sort By Price<span class="caret"></span></button>
+      <ul id="dropdownagain"  class="dropdown-menu">
+        <li><a rel="noopener" (click)="sortByPriceIncreaseToDecrease()">High to low</a></li>
+        <li><a rel="noopener" (click)="sortByPriceDecreaseToIncrease()">Low to high</a></li>
+      </ul>
+    </div>
+
+    <div class="dropdown">
+      <button class="btn btn-primary" type="button" (click)="viewAll()">View All Courses</button>
+    </div>
+</div>
+
+<hr/>
 
 <!-- <div class="course-container">
   <div class="course-card" *ngFor="let course of courses">
@@ -43,6 +80,7 @@
       <p>
         Rating : <ngb-rating [max]="5" [rate]="course.rating" [readonly]="true"></ngb-rating>({{course.rating}}k ratings)
       </p>
+      <p>Price : ₹{{course.price}}</p>
       <a  (click)="handleCourse(course.id)" ><button type="button" class="btn btn-primary">View Course</button></a>
       </div>
     </div> 			

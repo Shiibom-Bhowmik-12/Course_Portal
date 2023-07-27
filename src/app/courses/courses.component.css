@@ -58,6 +58,7 @@
 
 .card{
   width: 340px;
+  height: 570px;
   margin: auto;
   border:1px solid #3a3e39;
 }
@@ -92,4 +93,57 @@ ngb-rating {
   position: fixed;
   width:100%;
   z-index:100;
+}
+
+#search{
+  margin-left: 80px;
+  margin-top: 9px;
+  width: 500px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #3a3e39;
+  padding-left: 10px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+#magicon{
+  margin-left: -40px;
+  margin-top: 7px;
+  width: 30px;
+  height: 30px;
+}
+
+hr{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 3px solid #20211f;
+}
+
+#btncollection{
+  display: flex;
+}
+
+.btn{
+  margin-left: 5px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-top: 9px;
+  width: 160px;
+  height: 42px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+#dropdownagain{
+  width:150px;
+  margin-left:5px;
+  margin-top:4px;
+}
+
+a:hover{
+  cursor:pointer;
+}
+
+li:hover{
+  cursor:pointer;
+  background: #d3d3d3;
 }

@@ -1,0 +1,63 @@
+#logo{
+  margin-left:40px;
+  margin-top: 1px;
+  width: 200px;
+  height: 45px;
+}
+
+.dropdown-menu{
+  margin-left: -75px;
+  width:50px;
+  text-align: center;
+  font-size: 20px;
+  justify-content: center;
+}
+
+.dropdown-item:hover{
+  background-color: #ddd8d8;
+}
+
+.dropdown-toggle{
+  width: 33px;
+  height: 32px;
+}
+
+.loginpng:hover{
+  cursor: pointer;
+}
+
+.dropdown{
+  margin-left:50px;
+}
+
+#cart{
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+  margin-left: 1020px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+#orders{
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+  margin-left: 29px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+#cart:hover{
+  color: #3a3e39;
+  cursor: pointer;
+}
+
+#orders:hover{
+  color: #3a3e39;
+  cursor: pointer;
+}
+
+::ng-deep #nav{
+  position: fixed;
+  width:100%;
+  z-index:100;
+}

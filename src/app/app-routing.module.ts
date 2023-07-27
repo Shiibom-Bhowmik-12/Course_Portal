@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { HomeComponent } from './home/home.component';
 import { ZoomComponent } from './zoom/zoom.component';
 import { DashboardComponent } from './dashboard/dashboard.component';

@@ -10,10 +10,24 @@ import { Router,NavigationEnd } from '@angular/router';
 })
 export class CoursesComponent implements OnInit {
   courses: any[] = [];
-  private _searchTxt: string = '';
   filteredCourses: any[] = [];
+  private _searchTxt: string = '';
 
   constructor(private router: Router, private courseService: CourseService) {}
+
+  ngOnInit() {
+    this.courses = this.courseService.getCourses();
+    this._searchTxt = '';
+    this.filteredCourses = this.courses;
+
+    //scrolling the window to the top while navigating to this component
+    this.router.events.subscribe((evt) => {
+      if(!(evt instanceof NavigationEnd)){
+        return;
+      }
+      window.scrollTo(0,0);
+    });  
+  }
 
   get searchTxt(): string {
     return this._searchTxt;
@@ -31,21 +45,47 @@ export class CoursesComponent implements OnInit {
     );
   }
 
-  ngOnInit() {
-    this.courses = this.courseService.getCourses();
-    this._searchTxt = '';
-    this.filteredCourses = this.courses;
-    this.router.events.subscribe((evt) => {
-      if(!(evt instanceof NavigationEnd)){
-        return;
-      }
-      window.scrollTo(0,0);
-    });  
-  }
-
+  //to route specific course page
   handleCourse(id: number) {
     this.router.navigate(['coursedetails', id]);
   }
 
+  sortByRatingIncreaseToDecrease(){
+    this.filteredCourses.sort((a,b) => {
+      return a.rating - b.rating;
+    });
+  }
 
+  sortByRatingDecreaseToIncrease(){
+    this.filteredCourses.sort((a,b) => {
+      return b.rating - a.rating;
+    });
+  }
+
+  sortByPriceIncreaseToDecrease(){
+    this.filteredCourses.sort((a,b) => {
+      return a.price - b.price;
+    });
+  }
+
+  sortByPriceDecreaseToIncrease(){
+    this.filteredCourses.sort((a,b) => {
+      return b.price - a.price;
+    });
+  }
+
+  category: string = '';
+  categoryFilter: any[] = [];
+  sortByCategory(category:string){
+      this.category = category;
+      this.categoryFilter = this.courses.filter((course: any) => {
+        return course.category === this.category;
+      });
+      this.filteredCourses = this.categoryFilter;
+  }
+
+  viewAll(){
+    this.filteredCourses = this.courses;
+  }
 }
+
