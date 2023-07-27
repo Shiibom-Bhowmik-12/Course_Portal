@@ -11,7 +11,7 @@
     <img class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" src="assets/login.png" alt="login"/>
     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
       <li id="proli"><a class="dropdown-item" routerLink="/viewprofile" routerLinkActive="active">Profile</a></li>
-      <li id="logli"><a class="dropdown-item" routerLink="/home" routerLinkActive="active">Logout</a></li>
+      <li id="logli"><a class="dropdown-item" (click)="logout()">Logout</a></li>
     </ul>
   </div>
 </nav>

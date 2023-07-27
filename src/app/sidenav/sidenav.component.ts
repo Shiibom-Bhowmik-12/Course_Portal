@@ -48,15 +48,16 @@ export class SidenavComponent implements OnInit {
     },
     {
       number:'7',
-      name:'Uploaded assignments',
-      routername:'assignments',
-      icon:'fa-solid fa-folder',
+      // name:'Uploaded assignments',
+      name:'Courses',
+      routername:'courses',
+      icon:'fa-solid fa-book',
     },
     {
       number:'8',
       name:'My Courses',
       routername:'mycourses',
-      icon:'fa-solid fa-book',
+      icon:'fa-solid fa-book-open',
     },
     {
       number:'9',

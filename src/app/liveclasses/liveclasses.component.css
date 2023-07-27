@@ -1,0 +1,95 @@
+main{
+  position:absolute;
+  width:100%;
+  top:4rem;
+  z-index: 1;
+}
+
+app-sidenav{
+  position:fixed;
+  left:0rem;
+  width:60px;
+  height:656px;
+  /* margin-left:0px; */
+  margin-bottom: 10px;
+  background-color: rgba(34,34,34,1);
+  border-top:1px solid white;
+  box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+  overflow-x :hidden;
+  white-space: nowrap;
+  transition:width 260ms ease-in;
+}
+
+.app-side-nav-open{
+  width:245px;
+}
+
+.display-area{
+  position:absolute;
+  margin-left:100px;
+  width:calc(100% - 250px);
+  transition: left 3s ease;
+  /* text-align: center; */
+  margin-top: 8px;
+}
+
+.display-area-shrink{
+  width:calc(100% - 60px);
+  position:absolute;
+  width:95%;
+  height:100%;
+  margin-left:170px;
+  /* margin-top: 20px; */
+  transition: margin-left 0.5s ease, width 0.3s ease;
+}
+
+app-headermain{
+  position:fixed;
+  top:0px;
+  width:100%;
+  z-index: 2;
+}   
+
+
+p{
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+.card {
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  border-color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  background-color: #fff;
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  /* font-weight: 300; */
+}
+
+.card p {
+  color: #666;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}

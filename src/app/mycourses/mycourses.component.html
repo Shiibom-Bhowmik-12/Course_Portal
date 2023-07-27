@@ -1,1 +1,16 @@
-<p>mycourses works!</p>
+<div class="container-fluid g-0">
+  <app-headermain (sideNavToggle)="sideNavStatus=$event"></app-headermain>
+
+  <main>
+    <app-sidenav [sideNavStatus]="sideNavStatus" [ngClass]="{'app-side-nav-open':sideNavStatus}"></app-sidenav>
+      <div class="display-area">
+        <!-- <router-outlet></router-outlet> -->
+        <div [ngClass]="{'display-area-shrink':sideNavStatus}">
+              <p class="fs-1 fw-bold">
+                Here are your courses, happy learning!
+              </p>
+        </div>
+    </div>
+  </main>
+</div>
+

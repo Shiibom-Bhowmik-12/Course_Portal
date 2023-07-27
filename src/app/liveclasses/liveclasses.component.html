@@ -1,1 +1,23 @@
-<p>liveclasses works!</p>
+<div class="container-fluid g-0">
+  <app-headermain (sideNavToggle)="sideNavStatus=$event"></app-headermain>
+
+  <main>
+    <app-sidenav [sideNavStatus]="sideNavStatus" [ngClass]="{'app-side-nav-open':sideNavStatus}"></app-sidenav>
+      <div class="display-area">
+        <!-- <router-outlet></router-outlet> -->
+        <div [ngClass]="{'display-area-shrink':sideNavStatus}">
+              <p class="fs-1 fw-bold">
+                Your upcoming live classes...
+              </p>
+              <div class="card">
+                <h2>Join NodeJS Live Classes</h2>
+                <p>Welcome learner! Join the session and learn from experts.</p>
+                <div class="button-container">
+                  <a routerLink="/zoom" routerLinkActive="active" class="button">Join Now</a>
+                </div>
+              </div>
+        </div>
+    </div>
+  </main>
+</div>
+

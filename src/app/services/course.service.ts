@@ -25,7 +25,7 @@ export class CourseService {
       imageUrl: 'assets/datascience.jpg',
       price: 50,
       rating: 4.0,
-      educator: 'React University',
+      educator: 'Data Science University',
       rator: 5,
       category : 'Data Science',
       duration: 78

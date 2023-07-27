@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./liveclasses.component.css']
 })
 export class LiveclassesComponent {
-
+  sideNavStatus:boolean = false;
 }

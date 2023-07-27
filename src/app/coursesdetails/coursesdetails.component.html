@@ -3,6 +3,7 @@
     <img src="assets/complogo.png" alt="logo" id="logo" />
   </a>
 
+  <a href="#" id="orders"><b>Orders</b></a>
   <a href="#" id="cart"><b>Cart</b></a>
   <a href="#" id="orders"><b>Orders</b></a>
 
@@ -17,6 +18,9 @@
 
 <br/>
 <br/>
+<br/>
+<br/>
+
 
 
 
@@ -26,6 +30,46 @@
   <p>Price : 	₹{{course.price}}</p>
   <p>Description : {{course.description}}</p>
 </div> -->
+
+
+<div class="container">
+  <!-- Video Player on the Left Side -->
+  <div class="video">
+    <!-- Replace the src attribute with the URL of your course video -->
+    <iframe src="https://www.youtube.com/embed/l2PyiNFZwNc" allowfullscreen></iframe>
+  </div>
+  
+  <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/l2PyiNFZwNc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+  <!-- Course Content on the Right Side -->
+  <div class="content">
+    <h2>{{course.name}}</h2>
+    <!-- <p>
+      Welcome to our course! In this course, you will learn valuable skills and techniques to help you succeed in your chosen field.
+    </p> -->
+    <p>
+      {{course.description}}
+    </p>
+    <p>
+      Educator : {{course.educator}}
+    </p>
+    <p>
+      Rating : <ngb-rating [max]="5" [rate]="course.rating" [readonly]="true"></ngb-rating>({{course.rating}}k ratings)
+    </p>
+    <p>
+      Topics covered:
+    </p>
+    <ul>
+      <li>Topic 1</li>
+      <li>Topic 2</li>
+      <li>Topic 3</li>
+      <!-- Add more topics here -->
+    </ul>
+    <p id="price">
+      Price : ₹{{course.price}}
+    </p>
+  </div>
+  <input type="button" class="btn btn-primary" value="Enroll"/>
+</div>
 
 <br/>
 <app-footer></app-footer>

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./mycourses.component.css']
 })
 export class MycoursesComponent {
-
+  sideNavStatus:boolean = false;
 }
