@@ -1,30 +1,35 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
+// import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
 })
-export class LoginComponent {
-  userEmail:string="";
-  userPassword:string="";
+export class LoginComponent implements OnInit {
+  userEmail: string = '';
+  userPassword: string = '';
 
-  constructor( private router: Router) { }
+  constructor(private router: Router) {}
 
-  tinyAlert(){
-    Swal.fire('Oops...','Invalid Credentials','error');
+  ngOnInit() {}
+
+  tinyAlert() {
+    Swal.fire('Oops...', 'Invalid Credentials', 'error');
   }
 
-  onSubmit(){
+  onSubmit() {
     const userData = JSON.parse(localStorage.getItem('userData') || '{}');
     console.log(userData);
-    if(userData.userEmail == this.userEmail && userData.password == this.userPassword){
+    if (
+      userData.userEmail == this.userEmail &&
+      userData.password == this.userPassword
+    ) {
       this.router.navigate(['/dashboard']);
-    }else{
+    } else {
       this.tinyAlert();
-      // console.log(this.username+this.password);
       this.router.navigate(['/login']);
     }
   }

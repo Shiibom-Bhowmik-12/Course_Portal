@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ExtraOptions } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -38,6 +39,7 @@ import { LiveclassesComponent } from './liveclasses/liveclasses.component';
 import { CoursesdetailsComponent } from './coursesdetails/coursesdetails.component';
 import { FormsModule } from '@angular/forms';
 import { EnrolledcoursesComponent } from './enrolledcourses/enrolledcourses.component';
+import { MycoursescontentComponent } from './mycoursescontent/mycoursescontent.component';
 
 const routerOptions: ExtraOptions = {
   anchorScrolling: 'enabled',
@@ -76,6 +78,7 @@ const routerOptions: ExtraOptions = {
     LiveclassesComponent,
     CoursesdetailsComponent,
     EnrolledcoursesComponent,
+    MycoursescontentComponent,
   ],
   imports: [
     BrowserModule,
@@ -83,6 +86,7 @@ const routerOptions: ExtraOptions = {
     FormsModule,
     NgbModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

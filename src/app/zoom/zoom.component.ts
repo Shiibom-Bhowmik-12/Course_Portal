@@ -15,8 +15,8 @@ export class ZoomComponent {
     ZoomMtg.i18n.reload('en-US');
 
     let payload = {
-      meetingNumber: '78216023191',
-      passWord: 'Uy95VB',
+      meetingNumber: '79286939584',
+      passWord: 'p034Zq',
       sdkKey: 'z4LSeXkrT4KWGzsnXTwl9A',
       sdkSecret: 'M4Bt5ftd971Hjvixfh7rw8uxNCZ19g3J',
       userName: 'Shibom',

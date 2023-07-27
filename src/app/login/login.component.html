@@ -16,4 +16,31 @@
     <button id="login" type="submit">Log In</button>
     <div id="signup">Not a User ? <a routerLink="/signup" routerLinkActive="active">Sign Up</a></div>
   </form>
+
+  <!-- <form [formGroup] = "loginForm" (ngSubmit)="onSubmit()">
+    <h3><u>Welcome Coder</u></h3>
+    <div class="form-group">
+
+      <label for="email">Email address</label>
+
+      <input formControlName="email" type="email" id="email" placeholder="Enter email" required/>
+
+      <div *ngIf="loginForm.get('email').invalid && loginForm.get('email').touched" class="text-danger">
+
+         Incorrect E-mail.
+      </div>
+    </div>
+
+    <div class="form-group">
+
+      <label for="password">Password</label>
+
+      <input formControlName="password" type="password" id="password" placeholder="Password" />
+
+    </div>
+
+    <button id="login" type="submit">Log In</button>
+    <div id="signup">Not a User ? <a routerLink="/signup" routerLinkActive="active">Sign Up</a></div>
+
+  </form> -->
 </body>

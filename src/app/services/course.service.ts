@@ -7,7 +7,7 @@ export class CourseService {
 
   private courses = [
     {
-      id: 1,
+      id: 0,
       name: 'Angular',
       description: 'Angular is a platform for building mobile and desktop web applications.djgbdkgbdgsjgbskg,sjbgsbgsgbksgbk',
       imageUrl: 'assets/angular.jpg',
@@ -19,7 +19,7 @@ export class CourseService {
       duration : 76
     },
     {
-      id: 2,
+      id: 1,
       name: 'Data Science',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sed velit aperiam quas ad accusamus expedita sunt quis, minima odit!skk bksgbjs bgksjbgks gbks',
       imageUrl: 'assets/datascience.jpg',
@@ -31,7 +31,7 @@ export class CourseService {
       duration: 78
     },
     {
-      id: 3,
+      id: 2,
       name: 'Vue',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sed velit aperiam quas ad accusamus expedita sunt quis, minima odit!skk bksgbjs bgksjbgks gbks',
       imageUrl: 'assets/vuejs.jpeg',
@@ -43,7 +43,7 @@ export class CourseService {
       duration: 39
     },
     {
-      id: 4,
+      id: 3,
       name: 'JavaScript',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sed velit aperiam quas ad accusamus expedita sunt quis, minima odit!skk bksgbjs bgksjbgks gbks',
       imageUrl: 'assets/js.png',
@@ -55,7 +55,7 @@ export class CourseService {
       duration: 45
     },
     {
-      id: 5,
+      id: 4,
       name: 'NodeJs',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sed velit aperiam quas ad accusamus expedita sunt quis, minima odit!skk bksgbjs bgksjbgks gbks',
       imageUrl: 'assets/nodejs.jpg',
@@ -67,7 +67,7 @@ export class CourseService {
       duration: 67
     },
     {
-      id: 6,
+      id: 5,
       name: 'Python',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sed velit aperiam quas ad accusamus expedita sunt quis, minima odit!skk bksgbjs bgksjbgks gbks',
       imageUrl: 'assets/python.jpg',
@@ -79,7 +79,7 @@ export class CourseService {
       duration: 89
     },
     {
-      id: 7,
+      id: 6,
       name: 'Java',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sed velit aperiam quas ad accusamus expedita sunt quis, minima odit!skk bksgbjs bgksjbgks gbks',
       imageUrl: 'assets/java.jpeg',
@@ -91,7 +91,7 @@ export class CourseService {
       duration: 56
     },
     {
-      id: 8,
+      id: 7,
       name: 'C++',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sed velit aperiam quas ad accusamus expedita sunt quis, minima odit!skk bksgbjs bgksjbgks gbks',
       imageUrl: 'assets/c++.png',
@@ -103,7 +103,7 @@ export class CourseService {
       duration: 78
     },
     {
-      id: 9,
+      id: 8,
       name: 'C',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sed velit aperiam quas ad accusamus expedita sunt quis, minima odit!skk bksgbjs bgksjbgks gbks',
       imageUrl: 'assets/C.jpg',
@@ -115,7 +115,7 @@ export class CourseService {
       duration: 15
     },
     {
-      id: 10,
+      id: 9,
       name: 'C#',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sed velit aperiam quas ad accusamus expedita sunt quis, minima odit!skk bksgbjs bgksjbgks gbks',
       imageUrl: 'assets/csharp.jpg',
@@ -127,7 +127,7 @@ export class CourseService {
       duration: 34
     },
     {
-      id: 11,
+      id: 10,
       name: 'PHP',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sed velit aperiam quas ad accusamus expedita sunt quis, minima odit!skk bksgbjs bgksjbgks gbks sigb kjdbg isbg',
       imageUrl: 'assets/php.jpg',
@@ -139,7 +139,7 @@ export class CourseService {
       duration: 90
     },
     {
-      id: 12,
+      id: 11,
       name: 'Ruby',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sed velit aperiam quas ad accusamus expedita sunt quis, minima odit!skk bksgbjs bgksjbgks gbks.',
       imageUrl: 'assets/ruby.jpg',
@@ -151,7 +151,7 @@ export class CourseService {
       duration: 120
     },
     {
-      id: 13,
+      id: 12,
       name: 'ReactJs',
       description: 'React is a JavaScript library for building user interfaces.sskbgfksbg kjsbfksbg kshfbgbks hvsj su sfkbskf usjfbvjs subv sufbv',
       imageUrl: 'assets/reactjs.png',
@@ -163,7 +163,7 @@ export class CourseService {
       duration: 45
     },
     {
-      id: 14,
+      id: 13,
       name: 'Data Structures and Algorithms',
       description: 'A data structure is a particular way of organizing data in a computer so that it can be used effectively.',
       imageUrl: 'assets/dsa.jpg',
@@ -175,7 +175,7 @@ export class CourseService {
       duration: 67
     },
     {
-      id: 15,
+      id: 14,
       name: 'Machine Learning',
       description: 'Machine learning is the study of computer algorithms that improve automatically through experience.jsbfjsf jsbfjs jsbf sjbf',
       imageUrl: 'assets/ml.png',
@@ -184,6 +184,7 @@ export class CourseService {
       educator: 'ML University',
       rator:9,
       category : 'Data Science',
+      duration: 89
     }
   ];
 

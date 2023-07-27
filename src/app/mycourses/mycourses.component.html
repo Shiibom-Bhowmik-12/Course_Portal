@@ -18,11 +18,8 @@
                     <p>
                     <u>Educator</u> : {{course.educator}}
                   </p>
-                  <p>
-                    Rating : <ngb-rating [max]="5" [rate]="course.rating" [readonly]="true"></ngb-rating>({{course.rating}}k ratings)
-                  </p>
-                  <p>Price : ₹{{course.price}}</p>
-                  <!-- <a  (click)="handleCourse(course.id)" ><button type="button" class="btn btn-primary">View Course</button></a> -->
+                  <p><u>Duration</u> : {{course.duration}} Hours</p>
+                  <a routerLink="/mycoursescontent" routerLinkActive="active"></a><input type="button" class="btn btn-primary" value="View Course">
                   </div>
                 </div> 			
               </div>

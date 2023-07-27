@@ -96,7 +96,7 @@ p{
 
 .card{
   width: 340px;
-  height: 570px;
+  height: 550px;
   margin: auto;
   border:1px solid #3a3e39;
 }
@@ -113,7 +113,7 @@ ngb-rating {
 }
 
 .btn{
-  float:right;
+  margin-left:70px;
   font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
