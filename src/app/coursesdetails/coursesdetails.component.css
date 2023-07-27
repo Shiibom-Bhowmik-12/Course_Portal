@@ -111,3 +111,12 @@
   color: #3a3e39;
   cursor: pointer;
 }
+
+#logout{
+  cursor:pointer;
+}
+
+.btngreen{
+  background-color: greenyellow;
+  color:black;
+}

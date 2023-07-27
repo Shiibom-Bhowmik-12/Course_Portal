@@ -21,6 +21,7 @@ import { MycoursesComponent } from './mycourses/mycourses.component';
 import { OrdersComponent } from './orders/orders.component';
 import { LiveclassesComponent } from './liveclasses/liveclasses.component';
 import { CoursesdetailsComponent } from './coursesdetails/coursesdetails.component';
+import { EnrolledcoursesComponent } from './enrolledcourses/enrolledcourses.component';
 
 const routes: Routes = [
   {
@@ -98,6 +99,10 @@ const routes: Routes = [
   {
     path: 'liveclasses',
     component: LiveclassesComponent,
+  },
+  {
+    path: 'enrolledcourses',
+    component: EnrolledcoursesComponent,
   },
   {
     path: 'coursedetails/:id',

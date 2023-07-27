@@ -37,6 +37,7 @@ import { OrdersComponent } from './orders/orders.component';
 import { LiveclassesComponent } from './liveclasses/liveclasses.component';
 import { CoursesdetailsComponent } from './coursesdetails/coursesdetails.component';
 import { FormsModule } from '@angular/forms';
+import { EnrolledcoursesComponent } from './enrolledcourses/enrolledcourses.component';
 
 const routerOptions: ExtraOptions = {
   anchorScrolling: 'enabled',
@@ -74,6 +75,7 @@ const routerOptions: ExtraOptions = {
     OrdersComponent,
     LiveclassesComponent,
     CoursesdetailsComponent,
+    EnrolledcoursesComponent,
   ],
   imports: [
     BrowserModule,

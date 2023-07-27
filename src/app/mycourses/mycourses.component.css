@@ -93,3 +93,36 @@ p{
 .button:hover {
   background-color: #0056b3;
 }
+
+.card{
+  width: 340px;
+  height: 570px;
+  margin: auto;
+  border:1px solid #3a3e39;
+}
+
+p{
+  text-align: justify;
+  word-wrap:break-word;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+ngb-rating {
+  color: rgb(228, 191, 28);
+  font-size: 25px;
+}
+
+.btn{
+  float:right;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+.course-container{
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+}

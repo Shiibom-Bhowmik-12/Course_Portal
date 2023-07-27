@@ -4,13 +4,13 @@
   </a>
 
   <a routerLink="/courses" routerLinkActive="active" id="courses"><b>Courses</b></a>
-  <a routerLink="/cart" routerLinkActive="active" id="cart"><b>Enrolled Courses</b></a>
+  <a routerLink="/enrolledcourses" routerLinkActive="active" id="cart"><b>Enrolled Courses</b></a>
 
   <div class="dropdown">
     <img class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" src="assets/login.png" alt="login"/>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-        <li id="proli"><a class="dropdown-item" routerLink="/login" routerLinkActive="active">Login</a></li>
-        <li id="proli"><a class="dropdown-item" routerLink="/signup" routerLinkActive="active">Sign Up</a></li>
+        <li id="proli"><a class="dropdown-item" routerLink="/dashboard" routerLinkActive="active">Dashboard</a></li>
+        <li id="logout"><a class="dropdown-item" (click)="logout()">Logout</a></li>
       </ul>
    </div>
 </nav>
@@ -67,7 +67,7 @@
       Price : ₹{{course.price}}
     </p>
   </div>
-  <input type="button" class="btn btn-primary" value="Enroll" (click)="handleEnroll()"/>
+  <input type="button" class="btn btn-primary" value="{{enroll}}" (click)="handleEnroll()" [ngClass]="{'btngreen':enrollflag}"/>
 </div>
 
 <br/>

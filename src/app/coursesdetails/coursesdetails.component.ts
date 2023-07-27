@@ -1,6 +1,7 @@
 import { Component,OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { CourseService } from '../services/course.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-coursesdetails',
@@ -9,9 +10,12 @@ import { CourseService } from '../services/course.service';
 })
 export class CoursesdetailsComponent {
   course:any;
+  enrollflag:boolean = false;
+  enroll:string = "Enroll";
 
   constructor(
     private route:ActivatedRoute,
+    private router:Router,
     private courseService:CourseService
   ) {}
   
@@ -30,7 +34,7 @@ export class CoursesdetailsComponent {
     // Retrieve existing user data from local storage
     let userData = JSON.parse(localStorage.getItem('userData') || '{}');
   
-    // Check if 'courses' property exists in userData
+    // Check if 'courses' property exists in userData and is present then id is already enrolled else not
     if (!userData.hasOwnProperty('courses')) {
       // If 'courses' property doesn't exist, create it as a new array with the current course
       userData['courses'] = [this.course];
@@ -41,6 +45,14 @@ export class CoursesdetailsComponent {
   
     // Save the updated user data back to local storage
     localStorage.setItem('userData', JSON.stringify(userData));
+
+    //changing the color of enroll button
+    this.enrollflag = !this.enrollflag;
+    this.enroll = "Enrolled";
   }
   
+  logout(){
+    Swal.fire('Success','User Logged Out Successfully','success');
+    this.router.navigate(['/home']);
+  }
 }
