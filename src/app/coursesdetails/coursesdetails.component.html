@@ -3,9 +3,8 @@
     <img src="assets/complogo.png" alt="logo" id="logo" />
   </a>
 
-  <a href="#" id="orders"><b>Orders</b></a>
-  <a href="#" id="cart"><b>Cart</b></a>
-  <a href="#" id="orders"><b>Orders</b></a>
+  <a routerLink="/courses" routerLinkActive="active" id="courses"><b>Courses</b></a>
+  <a routerLink="/cart" routerLinkActive="active" id="cart"><b>Enrolled Courses</b></a>
 
   <div class="dropdown">
     <img class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" src="assets/login.png" alt="login"/>
@@ -68,7 +67,7 @@
       Price : ₹{{course.price}}
     </p>
   </div>
-  <input type="button" class="btn btn-primary" value="Enroll"/>
+  <input type="button" class="btn btn-primary" value="Enroll" (click)="handleEnroll()"/>
 </div>
 
 <br/>

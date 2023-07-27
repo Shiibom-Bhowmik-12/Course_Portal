@@ -22,5 +22,25 @@ export class CoursesdetailsComponent {
     });
   }
 
+  //enrolling the course and saving it into local storage
+
+  handleEnroll() {
+    console.log(this.course);
+  
+    // Retrieve existing user data from local storage
+    let userData = JSON.parse(localStorage.getItem('userData') || '{}');
+  
+    // Check if 'courses' property exists in userData
+    if (!userData.hasOwnProperty('courses')) {
+      // If 'courses' property doesn't exist, create it as a new array with the current course
+      userData['courses'] = [this.course];
+    } else {
+      // If 'courses' property exists, push the current course to the existing array
+      userData['courses'].push(this.course);
+    }
+  
+    // Save the updated user data back to local storage
+    localStorage.setItem('userData', JSON.stringify(userData));
+  }
   
 }

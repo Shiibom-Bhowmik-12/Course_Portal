@@ -1,5 +1,5 @@
 #logo{
-  margin-left:40px;
+  margin-left:50px;
   margin-top: 1px;
   width: 200px;
   height: 45px;
@@ -34,24 +34,11 @@
   text-decoration: none;
   color: black;
   font-size: 19px;
-  margin-left: 1020px;
-  font-family: Comic Sans MS, Comic Sans, cursive;
-}
-
-#orders{
-  text-decoration: none;
-  color: black;
-  font-size: 19px;
-  margin-left: 29px;
+  margin-left: 50px;
   font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
 #cart:hover{
-  color: #3a3e39;
-  cursor: pointer;
-}
-
-#orders:hover{
   color: #3a3e39;
   cursor: pointer;
 }
@@ -102,17 +89,7 @@
 
 .content p {
   color: #666;
-}
-
-body {
   font-family:Comic Sans MS, Comic Sans, cursive;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f1f1f1;
 }
 
 #price{
@@ -120,4 +97,17 @@ body {
   margin-top: 20px;
   font-size: 20px;
   font-weight: bold;
+}
+
+#courses{
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+  margin-left: 850px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+#courses:hover{
+  color: #3a3e39;
+  cursor: pointer;
 }
